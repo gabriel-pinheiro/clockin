@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/gabriel-pinheiro/clockin#readme",
   "dependencies": {
+    "@hapi/boom": "^9.1.2",
     "@hapi/hapi": "^20.1.4",
     "@mocko/logger": "^2.0.0",
     "debug": "^4.3.1",
@@ -35,6 +36,7 @@
     "@hapi/lab": "^24.2.1",
     "@types/dotenv": "^8.2.0",
     "@types/hapi": "^18.0.5",
+    "@types/hapi__boom": "^9.0.1",
     "@types/hapi__hapi": "^20.0.8",
     "@types/node": "^15.12.2",
     "axios": "^0.21.1",
