@@ -27,6 +27,7 @@
     "@hapi/hapi": "^20.1.4",
     "@mocko/logger": "^2.0.0",
     "debug": "^4.3.1",
+    "deta": "^0.0.12",
     "dotenv": "^10.0.0",
     "inversify": "^5.1.1",
     "reflect-metadata": "^0.1.13"

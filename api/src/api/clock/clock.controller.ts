@@ -2,6 +2,7 @@ import {Provider} from "../../utils/decorators/provider";
 import * as Hapi from '@hapi/hapi';
 import {ClockService} from "./clock.service";
 import { validateDate, validateClock } from "./clock.validator";
+import { ClockDto } from "./data/clock.dto";
 
 @Provider()
 export class ClockController {
@@ -14,7 +15,9 @@ export class ClockController {
 
         validateDate(date);
 
-        const clocks = await this.service.listByDate(date);
+        const clocks = (await this.service
+            .listByDate(date))
+            .map(ClockDto.ofEntity);
         return h.response(clocks);
     }
 
